@@ -1,0 +1,175 @@
+<html>
+ <head>
+  <title>
+   Image Gallery
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   .slider {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+            height: 300px;
+            position: relative;
+        }
+        .slide {
+            min-width: 100%;
+            transition: 0.5s;
+        }
+        .slider img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .gallery-img {
+            transition: transform 0.3s;
+        }
+        .gallery-img:hover {
+            transform: scale(1.05);
+        }
+  </style>
+ </head>
+ <body class="bg-black">
+  <!-- Transparent Navbar -->
+  <nav class="bg-black fixed w-full z-10 top-0">
+   <div class="container mx-auto flex items-center justify-between py-4">
+    <div class="text-white text-2xl font-bold">
+     <img alt="Company Logo" class="h-8 inline" height="50" src="iit kgp.jpg" width="50"/>
+     GLIMPES OF PRITHVI
+    </div>
+    <div class="hidden lg:flex flex-1 justify-center" id="menu">
+     <a class="text-white mx-4 hover:text-gray-300" href="index.html">
+      Home
+     </a>
+     <a class="text-white mx-4 hover:text-gray-300" href="login.html">
+      Register
+     </a>
+     <a class="text-white mx-4 hover:text-gray-300" href="contact.html">
+      Contact Us
+     </a>
+    </div>
+    <div class="block lg:hidden">
+     <button class="text-white focus:outline-none" id="menu-button">
+      <i class="fas fa-bars">
+      </i>
+     </button>
+    </div>
+   </div>
+   <div class="lg:hidden hidden bg-black" id="mobile-menu">
+    <a class="block text-white py-2 px-4 hover:bg-gray-700" href="index.html">
+     Home
+    </a>
+    <a class="block text-white py-2 px-4 hover:bg-gray-700" href="login.html">
+     Register
+    </a>
+    <a class="block text-white py-2 px-4 hover:bg-gray-700" href="contact.html">
+     Contact Us
+    </a>
+   </div>
+  </nav>
+  <!-- Image Slider -->
+  <div class="slider mt-16" id="slider">
+   <div class="slide">
+    <img alt="Beautiful landscape with mountains and a lake" class="border-4 border-white" height="300" src="iit kgp.jpg" width="1200"/>
+   </div>
+   
+  </div>
+  <!-- Gallery Section 1 -->
+  <div class="container mx-auto my-8">
+   <h2 class="text-2xl font-bold text-center text-white mb-4">
+    Section 1
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+    <img alt="Image 1 description" class="border-4 border-white gallery-img" height="300" src="https://storage.googleapis.com/a1aa/image/EneNy3zd7ND3-AIYIjJW6G2TVTdkGOkOaJeOIZmAFPQ.jpg" width="400"/>
+    <img alt="Image 2 description" class="border-4 border-white gallery-img" height="300" src="https://storage.googleapis.com/a1aa/image/ZtqmRGT4hX9cbms7Ga9H6hm-j613EeR7zieYkZP30M8.jpg" width="400"/>
+    <img alt="Image 3 description" class="border-4 border-white gallery-img" height="300" src="https://storage.googleapis.com/a1aa/image/C9-WgokPspa02B5rS6olqhOj_ipk2eF_a06uTqmbxJE.jpg" width="400"/>
+    <img alt="Image 4 description" class="border-4 border-white gallery-img" height="300" src="https://storage.googleapis.com/a1aa/image/u2kg-8pM6vf8KhcY5Ht3QVj6FTLo5VDKYAiLop1eijk.jpg" width="400"/>
+    <img alt="Image 5 description" class="border-4 border-white gallery-img" height="300" src="https://storage.googleapis.com/a1aa/image/nCjyjXMfp02LU2CIuZMfm69qou5PYETnANSH3yOJgno.jpg" width="400"/>
+    <img alt="Image 6 description" class="border-4 border-white gallery-img" height="300" src="https://storage.googleapis.com/a1aa/image/RCI5adkFVmPOkoTrn1SXjIkhvTnFfPli4GS9bVtVCHA.jpg" width="400"/>
+   </div>
+  </div>
+  <!-- Gallery Section 2 -->
+  <div class="container mx-auto my-8">
+   <h2 class="text-2xl font-bold text-center text-white mb-4">
+    Section 2
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+    <img alt="Image 7 description" class="border-4 border-white gallery-img" height="300" src="https://storage.googleapis.com/a1aa/image/18fU2eWnqxVeXwCFdYo-lwEuenO3-XW0q_of3JHSCE4.jpg" width="400"/>
+    <img alt="Image 8 description" class="border-4 border-white gallery-img" height="300" src="https://storage.googleapis.com/a1aa/image/XnzJjfdUjB9ZRErXXstuUcl6ZQYUINaj6_Ma0Qb2if0.jpg" width="400"/>
+    <img alt="Image 9 description" class="border-4 border-white gallery-img" height="300" src="https://storage.googleapis.com/a1aa/image/neYrBKDzuxtySYPbU0NYEdQ8nzUGxC9JBz6_HKcHT24.jpg" width="400"/>
+    <img alt="Image 10 description" class="border-4 border-white gallery-img" height="300" src="https://storage.googleapis.com/a1aa/image/9W0x8wwX0qbVRU_vwVGv_BcivaZ1EmIRX0bQEcO7w20.jpg" width="400"/>
+    <img alt="Image 11 description" class="border-4 border-white gallery-img" height="300" src="https://storage.googleapis.com/a1aa/image/65NfL-RfpNIMF0FdSPt6PfHbKW-aUHaeQNTYqFG3Kj0.jpg" width="400"/>
+    <img alt="Image 12 description" class="border-4 border-white gallery-img" height="300" src="https://storage.googleapis.com/a1aa/image/0Tw1jbZlF7zjstKOiHnoApwKTMNA2ZzyziLTSRdoaK8.jpg" width="400"/>
+   </div>
+  </div>
+  <!-- Gallery Section 3 -->
+  <div class="container mx-auto my-8">
+   <h2 class="text-2xl font-bold text-center text-white mb-4">
+    Section 3
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+    <img alt="Image 13 description" class="border-4 border-white gallery-img" height="300" src="https://storage.googleapis.com/a1aa/image/_IPaIR9uFwOem1kjNJ48XPg1MIte-viD3CsJ8dVVbVQ.jpg" width="400"/>
+    <img alt="Image 14 description" class="border-4 border-white gallery-img" height="300" src="https://storage.googleapis.com/a1aa/image/MNFwsSHRXXKrmpe8d1u0fY1wClRoiN0vsPFSv09Yig8.jpg" width="400"/>
+    <img alt="Image 15 description" class="border-4 border-white gallery-img" height="300" src="https://storage.googleapis.com/a1aa/image/DYQ12jR8xsEABe_W29YcrDFiBCdHkqCRZLohHFpWFMs.jpg" width="400"/>
+    <img alt="Image 16 description" class="border-4 border-white gallery-img" height="300" src="https://storage.googleapis.com/a1aa/image/LI1bMQIKGhW3pZFQCiF2xLggFU5XRBp6Rq0dA09HJHk.jpg" width="400"/>
+    <img alt="Image 17 description" class="border-4 border-white gallery-img" height="300" src="https://storage.googleapis.com/a1aa/image/Y_5Dagan6U7FqwWdT6iqi3dV92art1EGzeT2T_fk8hk.jpg" width="400"/>
+    <img alt="Image 18 description" class="border-4 border-white gallery-img" height="300" src="https://storage.googleapis.com/a1aa/image/iFmbJRtn5bFkSLhvXo09Tj2RfuDtSnpPU9tFvW1ysSw.jpg" width="400"/>
+   </div>
+  </div>
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-4">
+   <div class="container mx-auto text-center">
+    <div class="mb-4">
+     <a class="mx-2 text-white" href="#">
+      <i class="fab fa-facebook-f">
+      </i>
+     </a>
+     <a class="mx-2 text-white" href="#">
+      <i class="fab fa-twitter">
+      </i>
+     </a>
+     <a class="mx-2 text-white" href="#">
+      <i class="fab fa-instagram">
+      </i>
+     </a>
+     <a class="mx-2 text-white" href="#">
+      <i class="fab fa-linkedin-in">
+      </i>
+     </a>
+    </div>
+    <p>
+     © 2025 IIT KHARAGPUR. All rights reserved.
+    </p>
+   </div>
+  </footer>
+  <script>
+   let currentIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.transform = `translateX(${100 * (i - index)}%)`;
+            });
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            showSlide(currentIndex);
+        }
+
+        setInterval(nextSlide, 3000);
+        showSlide(currentIndex);
+
+        // Mobile menu toggle
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+  </script>
+ </body>
+</html>

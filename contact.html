@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .video-section {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+
+        .video-background {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: 0;
+            object-fit: cover;
+        }
+
+        .content-wrapper {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <!-- Section 1: Video Background Hero -->
+    <section class="text-white video-section">
+        <div class="video-overlay"></div>
+        <div class="content-wrapper">
+            <nav class="flex justify-between items-center p-6 fixed w-full top-0">
+                <div class="text-2xl font-bold">Contact Us</div>
+                <div class="space-x-8">
+                    <a href="index.html" class="hover:text-gray-400">Home</a>
+                    <a href="team.html" class="hover:text-gray-400">Team</a>
+                    <a href="event landing/event.html" class="hover:text-gray-400">Events</a>
+                    <a href="gallery.html" class="hover:text-gray-400">Gallery</a>
+                </div>
+                <button class="bg-green-500 text-black px-4 py-2 rounded-full hover:bg-green-600">Sign In</button>
+            </nav>
+            
+            <div class="flex flex-col items-center justify-center h-screen text-center">
+                <h1 class="text-5xl md:text-6xl font-bold mb-4">Participate in Prithvi</h1>
+                <p class="text-lg md:text-xl mb-8">Register yourself for Prithvi <br> if you have any problem feel free to DM US</p>
+                <button class="bg-green-500 text-black px-6 py-3 rounded-full hover:bg-green-600 flex items-center">
+                   <a href="https://api.whatsapp.com/send?phone=15551234567"> Get started</a> <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+        </div>
+
+        <video autoplay muted loop playsinline class="video-background">
+            <source src="final video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Section 2: Split Layout -->
+    <section class="bg-black text-white py-20">
+        <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between px-6 lg:px-12">
+            <div class="text-left lg:w-1/2">
+                <h1 class="text-green-500 text-lg font-bold mb-4">Contact us </h1>
+                <h2 class="text-5xl font-bold mb-4">We have a dedicated costomer support team</h2>
+                <p class="text-lg mb-8">Give a phone call to us</p>
+                <button class="bg-green-500 text-black font-bold py-2 px-6 rounded-full"><a href="tel:+6494461709">Phone</a></button>
+            </div>
+            <div class="lg:w-1/2 mt-12 lg:mt-0 flex justify-center">
+                <img alt="Illustration" class="rounded-lg shadow-xl" src="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Account Creation -->
+    <section class="bg-gray-100 py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 text-center md:text-left">
+                <h2 class="text-green-600 text-sm font-bold uppercase mb-2">Create a new account</h2>
+                <h1 class="text-4xl md:text-5xl font-bold text-black mb-4">Creating an account is extremely easy</h1>
+                <p class="text-gray-700 mb-6">Start enjoying our services in just 2 minutes</p>
+                <button class="bg-black text-white py-2 px-6 rounded-full text-lg">Get started</button>
+            </div>
+            <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
+                <img alt="Burger illustration" class="rounded-lg shadow-xl" src="https://storage.googleapis.com/a1aa/image/TObTe7gJFJLMG7MQFRsrxaPKJ0FUWGFxlcCTvCDe7PU.jpg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Discover -->
+    <section class="bg-gray-100 py-20">
+        <div class="container mx-auto px-4 py-8 flex flex-col md:flex-row items-center">
+            <div class="w-full md:w-1/2 flex justify-center">
+                <img alt="People illustration" class="rounded-lg shadow-xl w-full max-w-md" src="https://storage.googleapis.com/a1aa/image/iMQYDiztXKVxffq9jx49ZhmMOKOoz5c8yrgrvbmDTXg.jpg">
+            </div>
+            <div class="w-full md:w-1/2 mt-8 md:mt-0 md:ml-8 text-center md:text-left">
+                <h2 class="text-green-600 text-sm font-bold uppercase mb-2">Discover more</h2>
+                <h1 class="text-4xl font-bold text-gray-900 mb-4">Explore amazing Experience</h1>
+                <p class="text-gray-700 mb-6">Discover our labs  </p>
+                <button class="bg-black text-white py-2 px-6 rounded-full">Explore now</button>
+            </div>
+        </div>
+    </section>
+
+    <!--  Footer section -->
+      <!-- Add this section before the closing </body> tag -->
+<footer class="bg-black text-white py-12">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col items-center space-y-4">
+            <h3 class="text-2xl font-bold mb-4">Connect With Us</h3>
+            <div class="flex space-x-6">
+                <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener noreferrer" 
+                   class="hover:text-green-500 transition-colors duration-300">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer" 
+                   class="hover:text-green-500 transition-colors duration-300">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+                <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer" 
+                   class="hover:text-green-500 transition-colors duration-300">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" 
+                   class="hover:text-green-500 transition-colors duration-300">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer" 
+                   class="hover:text-green-500 transition-colors duration-300">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+            </div>
+            <p class="text-gray-400 text-sm mt-8">
+                &copy; 2025 IIT KHARAGPUR. All rights reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        // Optional: Add video autoplay fallback for mobile
+        document.addEventListener('DOMContentLoaded', function() {
+            const video = document.querySelector('.video-background');
+            video.play().catch(error => {
+                // Handle autoplay restrictions
+                video.muted = true;
+                video.play();
+            });
+        });
+    </script>
+</body>
+</html>
